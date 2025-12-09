@@ -1,0 +1,17 @@
+# CLion/IntelliJ IDEA 配置文件（核心：忽略.idea整个文件夹）
+.idea/
+# CLion 构建目录（cmake-build-* 是CLion默认的编译缓存目录）
+cmake-build-*/
+# CMake 编译产物
+build/
+# Android NDK 编译临时文件
+*.o
+*.so
+*.a
+*.exe  # 注意：Android NDK编译的是无后缀可执行文件，这里忽略Windows误编译的exe
+# 日志/临时文件
+*.log
+*.tmp
+# 系统缓存文件
+.DS_Store
+Thumbs.db
